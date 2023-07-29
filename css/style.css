@@ -1,0 +1,489 @@
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; 
+  background-color: #DCEAB2;
+}
+ 
+p {
+  color: #84b80b;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; }
+
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease; }
+  a, a:hover {
+    text-decoration: none !important; }
+
+.content {
+  padding: 7rem 0; }
+
+h2 {
+  font-size: 20px; }
+
+.bg-left-half {
+  position: relative; }
+  .bg-left-half:before {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    content: "";
+    left: 0;
+    top: 0;
+    background-color: #f8f9fa; }
+
+.media-29101 img {
+  margin-bottom: 20px; }
+
+.media-29101 h3 {
+  font-size: 18px;
+  font-weight: 900 !important; }
+  .media-29101 h3 a {
+    color: #6c757d; }
+
+.owl-2-style .owl-nav {
+  display: none; }
+
+.owl-2-style .owl-dots {
+  text-align: center;
+  position: relative;
+  bottom: -30px; }
+  .owl-2-style .owl-dots .owl-dot {
+    display: inline-block; }
+    .owl-2-style .owl-dots .owl-dot span {
+      display: inline-block;
+      width: 15px;
+      height: 3px;
+      border-radius: 0px;
+      background: #cccccc;
+      -webkit-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+      -o-transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+      transition: 0.3s all cubic-bezier(0.32, 0.71, 0.53, 0.53);
+      margin: 3px; }
+    .owl-2-style .owl-dots .owl-dot.active span {
+      background: #007bff; }
+    .owl-2-style .owl-dots .owl-dot:active, .owl-2-style .owl-dots .owl-dot:focus {
+      outline: none; }
+
+      .navbar {
+        background-color: grey;
+        position: sticky;
+        top: 0;
+        z-index: 1000; /* High z-index to ensure the navbar stays on top of other elements */
+      }
+
+      
+      .hero {
+        background-image: url("/images/home.jpg");
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10%;
+        position: relative;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;  /* set z-index to be below the buttons and text */
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 2;  /* set z-index to be above the overlay */
+    }
+    
+    .hero-text {
+        position: relative;
+        color: white;
+        max-width: 600px;
+    }
+    
+    .hero-buttons {
+        margin-top: 2rem;  /* adjust margin-top as per your requirements */
+        display: flex;
+        gap: 10px;
+        position: relative;
+    }
+    
+      .btn-primary:hover {
+        background-color: #15b4b9;
+        border-color: #007bff;
+        color: white;
+      }
+      
+      .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+        color: white;
+      }
+      .rounded-btn {
+        border-radius: 25px;
+      }
+      
+      /* .carousel {
+        height: 500px;
+        background-color: grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .carousel .carousel-item img {
+        height: 400px;
+        width: 400px;
+        object-fit: cover;
+      } */
+      @font-face {
+        font-family: 'icomoon';
+        src:  url('fonts/icomoon.eot?10si43');
+        src:  url('fonts/icomoon.eot?10si43#iefix') format('embedded-opentype'),
+          url('fonts/icomoon.ttf?10si43') format('truetype'),
+          url('fonts/icomoon.woff?10si43') format('woff'),
+          url('fonts/icomoon.svg?10si43#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+      [class^="icon-"], [class*=" icon-"] {
+        /* use !important to prevent issues with browser extensions that change fonts */
+        font-family: 'icomoon' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+      
+        /* Better Font Rendering =========== */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      .card-img-top {
+        margin-top: 40px;
+        height: 200px;
+        object-fit: cover;
+      }
+    
+      /* float whatsapp */
+      .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:100;
+    }
+    
+    .my-float{
+        margin-top:16px;
+    }
+
+  #contact {
+    padding: 40px 0;
+    background: linear-gradient(160deg, #061324, #048A81);
+}
+.card {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+.form-control, .btn {
+    border-radius: 0;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* Menu button for mobile devices */
+.menu-btn {
+  /* display: none; Hide the menu button by default on larger screens */
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .nav-links {
+  display: none; /* Hide the nav links on mobile devices */
+}
+
+.menu-btn {
+  display: block; /* Show the menu button on mobile devices */
+}
+
+/* Add the hover effect for the menu button */
+.menu-btn:hover {
+  color: lightblue;
+}
+
+  .navbar.responsive {
+     flex-direction: column; /*Stack elements in a column on mobile devices */
+     align-items: flex-start;/* Align items to the left */
+     background-color: #111; /* Change background color for better contrast */
+  }
+
+  .logo,
+  .nav-links {
+    width: 100%;  /* Make the logo and nav links take the full width on mobile devices */
+    text-align: center; /* Center align the logo and nav links */
+  }
+
+  .logo {
+     margin-bottom: 1rem; /*Add some spacing below the logo */
+  }
+
+  .nav-link {
+    margin: 0.5rem 0; /*  Add spacing between the nav links */
+  }
+
+  /* Show the nav links when the menu button is clicked */
+  .navbar.responsive .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* footer */
+
+.footer.card {
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  background: linear-gradient(160deg, #061324, #048A81);
+  color: #333; /* Set a default text color that's visible on the gradient background */
+}
+
+.footer-logo {
+  width: 150px;
+  height: auto;
+}
+
+.footer-links, .social-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links li, .social-links li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.social-links li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  color: #888;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  background-color: #fff; /* Set a background color that contrasts with the gradient */
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* card */
+
+.card1 {
+  display: flex; /* This will create a flex container */
+  flex-direction: row; /* This will make the image and text align horizontally */
+  align-items: start; /* This will align the image and text at the start of the container */
+  padding: 4rem;
+}
+
+.image-left1{
+  flex: 1; /* This will make the image and text take up equal space */
+  object-fit: cover; /* This will make the image cover its div */
+  border-radius: 100px;
+  height: 500px;
+  width : 700px;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+  
+
+.text-right1 {
+  flex: 1; /* This will make the image and text take up equal space */
+  object-fit: cover; /* This will make the image cover its div */
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+
+
+.card2 {
+  display: flex; /* This will create a flex container */
+  flex-direction: row; /* This will make the text and image align horizontally */
+  align-items: start; /* This will align the text and image at the start of the container */
+  padding: 4rem;
+}
+
+.text-left2 {
+  flex: 1; 
+  align-items: center; 
+  justify-content: center; 
+  text-align: center; 
+}
+.image-right2{
+  flex: 1; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    height: 500px;
+    width : 700px;
+    border-radius: 100px;
+  object-fit: cover; /* This will make the image cover its div */
+
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  /* Common styles for both card1 and card2 */
+  .card1,
+  .card2 {
+    flex-direction: column;
+    padding: 1rem; /* Adjust padding for mobile view */
+  }
+
+  /* Card 1 styles */
+  .image-left1,
+  .text-right1 {
+    width: 100%; /* Set width to 100% for mobile view */
+    max-width: 100%; /* Remove the max-width limit for mobile view */
+  }
+
+  .image-left1 {
+    height: 200px; /* Reduce height for mobile view */
+  }
+
+  /* Card 2 styles */
+  .text-left2,
+  .image-right2 {
+    width: 100%; /* Set width to 100% for mobile view */
+    max-width: 100%; /* Remove the max-width limit for mobile view */
+  }
+
+  .image-right2 {
+    height: 200px; /* Reduce height for mobile view */
+  }
+}
+
+
+
+@media (min-width: 600px) {
+  .image-left {
+    order: 1;
+  }
+  .text-right {
+    order: 2;
+  }
+  .text-left {
+    order: 1;
+  }
+  .image-right {
+    order: 2;
+  }
+}
+/* button animation */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-primary, .btn-secondary {
+  animation: pulse 2s infinite;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  .hero-text {
+    font-size: 18px;
+  }
+  .card-img-top {
+    height: 150px;
+  }
+  .content {
+    padding: 3rem 0;
+  }
+  .owl-2-style .owl-dots {
+    bottom: -10px;
+  }
+}
+
+/* Tablet styles (adjust as needed) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .hero-text {
+    font-size: 20px;
+  }
+  .card-img-top {
+    height: 200px;
+  }
+  .content {
+    padding: 5rem 0;
+  }
+  .owl-2-style .owl-dots {
+    bottom: -20px;
+  }
+}
+
+/* Desktop styles (adjust as needed) */
+@media screen and (min-width: 1025px) {
+  .hero-text {
+    font-size: 24px;
+  }
+  .card-img-top {
+    height: 250px;
+  }
+  .content {
+    padding: 7rem 0;
+  }
+  .owl-2-style .owl-dots {
+    bottom: -30px;
+  }
+}
